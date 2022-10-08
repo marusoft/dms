@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,500&family=Raleway:wght@100;200;300;400;600&family=Roboto:wght@400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.register-container {
+  background: #e5e5e5;
+  height: 100vh;
+}
+header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.logo-text {
+  text-transform: uppercase;
+  margin-left: 0.8rem;
+  font-size: 24px;
+  color: #030026;
+  font-weight: 700;
+}
+.register {
+  display: flex;
+}
+.register-left {
+  flex: 50%;
+  padding: 20px;
+}
+.desc-container {
+  text-align: center;
+  /* margin: 0 auto; */
+}
+.title-desc {
+}
+.title-desc h3 {
+  font-weight: 500;
+  font-size: 40px;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+.title-desc p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  opacity: 0.4;
+  margin-bottom: 1rem;
+}
+.get-btn {
+  padding: 10px 14px;
+  background: #053582;
+  color: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+
+.register-right {
+  flex: 50%;
+  padding: 20px;
+}
+.form-container {
+  background: #ffffff;
+  box-shadow: 3px -5px 40px rgba(205, 205, 212, 0.1);
+  border-radius: 10px;
+  padding: 30px;
+}
+.progress-bar{
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.form-info{
+  margin-bottom: 1rem;
+}
+.form-info p{
+  margin-top: .8rem;
+}
+/* form {
+} */
+.first{
+  display: flex;
+  /* justify-content: space-between; */
+}
+.span{
+ flex: 50%;
+}
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .register {
+    flex-direction: column;
+  }
+}
