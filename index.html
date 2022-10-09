@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Delivery Management System</title>
+    <link rel="icon" href="./image/Logo.png" type="image/png" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
   </head>
   <body>
     <div class="register-container">
@@ -38,15 +40,34 @@
               </div>
               <div class="form-wrapper">
                 <form>
-                  <div class="first">
-                    <input type="text" class="span" placeholder="Company name" />
+                  <div class="name-input">
+                    <input
+                      type="text"
+                      class="span"
+                      placeholder="Company name"
+                    />
                     <input type="text" class="span" placeholder="Lastname" />
                   </div>
-                  <input type="text" placeholder="Company name" />
-                  <input type="text" placeholder="Company name" />
-                  <input type="text" placeholder="Company name" />
-                  <input type="text" placeholder="Company name" />
+                  <input type="text" placeholder="Company Address" required />
+                  <input type="text" placeholder="Phone Number" required />
+                  <input
+                    type="email"
+                    placeholder="Company Email Address"
+                    required
+                  />
+                  <div class="password-container">
+                    <input type="password" placeholder="Password" required />
+                    <!-- <i class="fa fa-eye"></i> -->
+                    <img src="./image/eye.png" alt="eye icon" class="eye" />
+                  </div>
                 </form>
+              </div>
+              <p class="terms-condition">
+                By clicking "Next" you agree to our <a href="/term-condition">Terms of Service, Privacy Policy,</a> and to receive marketing communications from Envoy.
+              </p>
+              <div class="account">
+                <p class="account-text">Got an account? <a href="/login"> Sign in</a></p>
+                <button class="get-btn">Register</button>
               </div>
             </div>
           </div>
