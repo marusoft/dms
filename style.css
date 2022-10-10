@@ -67,7 +67,7 @@ header {
   box-shadow: 3px -5px 40px rgba(205, 205, 212, 0.1);
   border-radius: 20px;
   padding: 30px;
-  width: 512px;
+  /* width: 512px; */
   height: auto;
   margin: 0 auto;
 }
@@ -110,7 +110,7 @@ input {
   line-height: 1.5;
   color: #252525;
 }
-a{
+a {
   text-decoration: none;
 }
 .account {
@@ -119,12 +119,12 @@ a{
   justify-content: space-between;
   align-items: center;
 }
-.account-text{
+.account-text {
   margin-left: 2rem;
 }
 
 @media (max-width: 1040px) {
-  .title-desc h3{
+  .title-desc h3 {
     font-size: 25px;
   }
 }
@@ -132,21 +132,24 @@ a{
   .register {
     flex-direction: column;
   }
-  .name-input{
+  .name-input {
     flex-direction: column;
   }
- 
 }
-@media (max-width: 540px) {
-  .form-container{
-    width: auto;
-  }
-}
+/* @media (max-width: 540px) {
+
+} */
 @media (max-width: 400px) {
-  .account{
+  .account {
     flex-direction: column;
   }
-  .account-text{
+  .account-text {
     margin-bottom: 1rem;
+  }
+  .register-right {
+    padding: 10px;
+  }
+  p.terms-condition{
+    font-size: 0.8rem;
   }
 }
