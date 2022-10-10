@@ -24,26 +24,26 @@ header {
 }
 .register {
   display: flex;
+  justify-content: space-evenly;
 }
 .register-left {
   flex: 50%;
-  padding: 20px;
+  padding: 40px;
 }
 .desc-container {
   text-align: center;
+  margin: 0 auto;
 }
 
 .title-desc h3 {
-  /* padding: 0px 200px; */
   font-weight: 100;
-  font-size: 40px;
+  font-size: 45px;
   color: #000000;
   margin-bottom: 1rem;
 }
 .title-desc p {
-  /* padding: 0px 240px; */
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.29rem;
   color: #000000;
   opacity: 0.4;
   margin-bottom: 2rem;
@@ -60,7 +60,7 @@ header {
 
 .register-right {
   flex: 50%;
-  padding: 20px;
+  padding: 40px;
 }
 .form-container {
   background: #ffffff;
@@ -68,7 +68,7 @@ header {
   border-radius: 20px;
   padding: 30px;
   width: 512px;
-  height: 600px;
+  height: auto;
   margin: 0 auto;
 }
 .progress-bar {
@@ -84,9 +84,6 @@ header {
 .name-input {
   display: flex;
   gap: 0.5rem;
-}
-.span {
-  flex: 50%;
 }
 input {
   width: 100%;
@@ -126,10 +123,19 @@ a{
   margin-left: 2rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1040px) {
+  .title-desc h3{
+    font-size: 25px;
+  }
+}
+@media (max-width: 900px) {
   .register {
     flex-direction: column;
   }
+  .name-input{
+    flex-direction: column;
+  }
+ 
 }
 @media (max-width: 540px) {
   .form-container{
