@@ -12,10 +12,10 @@
   background: #ffffff;
   height: 100vh;
 }
-.sidebar-content{
+.sidebar-content {
   padding: 1rem;
 }
-.sidebar-content li{
+.sidebar-content li {
   list-style: none;
   margin-bottom: 1.3rem;
 }
@@ -23,9 +23,12 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  text-decoration: none;
 }
-.icontext{
-  font-size: 1.6rem;
+.icontext {
+  font-size: 1.2rem;
+  color: #252525;
+  opacity: 0.4;
 }
 .image-wrapper img {
   padding: 1rem;
@@ -85,14 +88,13 @@ header {
   padding: 2rem;
 }
 
-
-
-
-
-
-
+@media (max-width: 768px) {
+  .icontext {
+    font-size: 1rem;
+  }
+}
 @media (max-width: 600px) {
-  .icontext{
+  .icontext {
     display: none;
   }
 }
