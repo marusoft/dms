@@ -1,7 +1,7 @@
 const password = document.getElementById("password");
 const eye = document.getElementById("eye");
 const registerBtn = document.getElementById("reg-btn");
-// console.log(registerBtn);
+console.log(registerBtn);
 
 // /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
@@ -39,21 +39,20 @@ function validateEmail() {
   }
 }
 
-const submitRegData = (e) => {
-  e.preventDefault();
-  // alert("data submited successfully");
+// submit event
+submitData = () => {
   const cName = document.getElementById("cname").value;
   const lName = document.getElementById("lname").value;
   const cAddress = document.getElementById("caddress").value;
   const phoneNumber = document.getElementById("phonenumber").value;
-  const emailAddresss = document.getElementById("email").value;
+  const emailAddress = document.getElementById("email").value;
   const password = document.getElementById("password").value;
 
-  localStorage.setItem("CompanyName", cName);
-  localStorage.setItem("LastName", lName);
-  localStorage.setItem("CompanyAddress", cAddress);
-  localStorage.setItem("PhoneNumber", phoneNumber);
-  localStorage.setItem("EmailAddresss", emailAddresss);
+  localStorage.setItem("Company Name", cName);
+  localStorage.setItem("Last Name", lName);
+  localStorage.setItem("Company Address", cAddress);
+  localStorage.setItem("phone Number", phoneNumber);
+  localStorage.setItem("email Address", emailAddress);
   localStorage.setItem("Password", password);
 
   if (
@@ -61,19 +60,11 @@ const submitRegData = (e) => {
     lName == "" &&
     cAddress == "" &&
     phoneNumber == "" &&
-    emailAddresss == "" &&
+    emailAddress == "" &&
     password == ""
   ) {
-    alert("details cannot be empty");
-  } else if (password.length >= 8 && password.length <= 20) {
-    alert("Account registration is successful");
-    // setTimeout(() => {
-    //   location.href = "./login.html";
-    // }, 5000);
-    location.href = "./login.html";
-  } else {
-    alert("Minimum of 8 characters is required for password");
+    alert("user details cannot be empty");
   }
 };
 
-registerBtn.addEventListener("click", submitRegData);
+registerBtn.addEventListener("click", submitData);
