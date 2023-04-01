@@ -12,8 +12,12 @@
   background: #ffffff;
   height: 100vh;
 }
-.sidebar-content {
+.image-wrapper img {
   padding: 1rem;
+}
+.sidebar-content {
+  padding: 1.5rem;
+  margin-top: 2rem;
 }
 .sidebar-content li {
   list-style: none;
@@ -25,14 +29,19 @@
   gap: 1.5rem;
   text-decoration: none;
 }
+.sidebar-content ul li a img {
+  display: block;
+  width: 20px;
+  height: 20px;
+  color: #252525;
+  /* opacity: .4; */
+}
 .icontext {
   font-size: 1.2rem;
   color: #252525;
   opacity: 0.4;
 }
-.image-wrapper img {
-  padding: 1rem;
-}
+
 .main-container {
   flex: 80%;
   background: #e5e5e5;

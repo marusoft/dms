@@ -99,11 +99,7 @@ input {
   position: relative;
 }
 .eye {
-<<<<<<< HEAD:styles/login.css
-  width: 15px;
-=======
   width: 20px;
->>>>>>> 2391fc39c677350ba5c20cacbde3e167793105dd:style.css
   position: absolute;
   top: 10px;
   right: 15px;

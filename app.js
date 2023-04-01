@@ -64,15 +64,29 @@ const submitRegData = (e) => {
     emailAddresss == "" &&
     password == ""
   ) {
-    alert("details cannot be empty");
+    // alert("details cannot be empty");
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Details cannot be empty!',
+    })
   } else if (password.length >= 8 && password.length <= 20) {
-    alert("Account registration is successful");
-    // setTimeout(() => {
-    //   location.href = "./login.html";
-    // }, 5000);
-    location.href = "./login.html";
+    // alert("Account registration is successful");
+    Swal.fire({
+      icon: 'success',
+      title: 'Successful!',
+      text: 'Account registration is successful!',
+    })
+    setTimeout(() => {
+      location.href = "./login.html";
+    }, 5000);
+  
   } else {
-    alert("Minimum of 8 characters is required for password");
+    // alert("Minimum of 8 characters is required for password");
+    Swal.fire({
+      icon: 'error',
+      text: 'Minimum of 8 characters is required for password',
+    })
   }
 };
 
