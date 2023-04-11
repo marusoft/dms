@@ -5,15 +5,20 @@
 }
 .container {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 .sidebar-container {
-  flex: 20%;
+  flex: 25%;
   background: #ffffff;
+}
+.sidebar-wrapper {
+  margin-top: 0.9rem;
   height: 100vh;
+  position: fixed;
+  top: 0;
 }
 .image-wrapper img {
-  padding: 1rem;
+  padding: 0.9rem;
 }
 .sidebar-content {
   padding: 1.5rem;
@@ -34,7 +39,6 @@
   width: 20px;
   height: 20px;
   color: #252525;
-  /* opacity: .4; */
 }
 .icontext {
   font-size: 1.2rem;
@@ -43,9 +47,8 @@
 }
 
 .main-container {
-  flex: 80%;
+  flex: 75%;
   background: #e5e5e5;
-  height: 100vh;
 }
 header {
   background: #fff;
@@ -53,6 +56,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 .search-wrapper {
   display: flex;
@@ -97,12 +103,216 @@ header {
   padding: 2rem;
 }
 
+.dms-dash {
+  margin-top: 2rem;
+  height: 100%;
+}
+/* .dms-dash-1 {
+} */
+.card {
+  background-color: #fff;
+  margin-bottom: 0.9rem;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.number h1 {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 49px;
+  color: #ff3a29;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+.top h3 {
+  width: 40%;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.number {
+  display: flex;
+  gap: 0.4rem;
+}
+.moment span {
+  display: flex;
+  align-items: center;
+}
+.moment img {
+  display: flex;
+  align-items: center;
+}
+.moment {
+  display: flex;
+  align-items: center;
+}
+.moment span {
+  font-weight: 400;
+  font-size: 12px;
+  color: #92929d;
+}
+.dms-dash-2 {
+  background-color: #fff;
+}
+.total-order,
+.order-desc,
+.order-img,
+.order-increment,
+.increment-graph {
+  margin-bottom: 0.4rem;
+}
+.order-desc,
+.report-desc {
+  font-weight: 400;
+  font-size: 14px;
+}
+.order-increment {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ff3a29;
+}
+.dms-dash-3 {
+  background-color: #fff;
+}
+.dms-dash-4 {
+  background-color: #fff;
+}
+.orders-info {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.order-figure {
+  font-weight: 700;
+  font-size: 22px;
+  color: #ff3a29;
+}
+.order-history span {
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 0.8rem;
+}
+.order-processed {
+  display: flex;
+  flex-direction: column;
+}
+.processed-count {
+  font-weight: 700;
+  font-size: 22px;
+  color: #4339f2;
+}
+.pool {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+  opacity: 0.4;
+}
+.exchange-pool {
+  display: flex;
+  justify-content: space-between;
+}
+.pool-desc h5 {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.003em;
+  color: #000000;
+}
+.pool-desc span {
+  font-weight: 400;
+  font-size: 12px;
+  color: #92929d;
+  margin-bottom: 0.7rem;
+  display: block;
+}
+.delivery-info {
+  display: flex;
+  flex-direction: column;
+}
+.delivery-detail {
+  display: flex;
+  justify-content: space-between;
+}
+.delivery-address {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+  opacity: 0.4;
+}
+.delivery-amount {
+  font-weight: 700;
+  font-size: 29px;
+  color: #000000;
+}
+.dms-dash-5 {
+  background-color: #ffffff;
+}
+.dms-dash-5 h1 {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+}
+.grid-item {
+  margin-bottom: 1rem;
+  padding: 20px;
+}
+.pool-orders {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+@media (min-width: 576px) {
+  .dms-dash {
+    display: flex;
+  }
+  .dms-dash-1 {
+    flex-basis: 25%;
+  }
+  .right-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 75%;
+  }
+  .top-right {
+    display: flex;
+    flex-basis: 50%;
+  }
+  .bottom-right {
+    display: flex;
+    flex-basis: 50%;
+  }
+  .dms-dash-2 {
+    flex-basis: 25%;
+  }
+  .dms-dash-3 {
+    flex-basis: 75%;
+  }
+  .dms-dash-4 {
+    flex-basis: 35%;
+  }
+  .dms-dash-5 {
+    flex-basis: 65%;
+  }
+  .right-container .grid-item {
+    margin-left: 10px;
+  }
+}
+
 @media (max-width: 768px) {
   .icontext {
     font-size: 1rem;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .icontext {
     display: none;
   }

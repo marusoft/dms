@@ -10,17 +10,32 @@ const loginUser = (e) => {
   const UserPassword = localStorage.getItem("Password");
 
   if (emailAddresss == "" && passWord == "") {
-    alert("User credential cannot be empty");
     // do something
+    // alert("User credential cannot be empty");
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "User credential cannot be empty!",
+    });
   } else if (emailAddresss == UserEmailAddress && passWord == UserPassword) {
     // do something
-    alert("Login successfull");
-    location.href = "./dashboard.html";
+    // alert("Login successfull");
+    Swal.fire({
+      icon: "success",
+      title: "Successful!",
+      text: "Account registration is successful!",
+    });
+    setTimeout(() => {
+      location.href = "./dashboard.html";
+    }, 5000);
   } else {
     // do something else
-    alert("User credential not found, kindly register an account");
+    // alert("User credential not found, kindly register an account");
+    Swal.fire({
+      icon: "error",
+      text: "User credential not found, kindly register an account",
+    });
   }
 };
 
 loginBtn.addEventListener("click", loginUser);
-

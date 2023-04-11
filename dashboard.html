@@ -5,116 +5,275 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
     <link rel="stylesheet" href="./styles/dashboard.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="sidebar-container">
-        <div class="image-wrapper">
-          <img src="./image/Logo.png" alt="dms logo" />
-        </div>
-        <div class="sidebar-content">
-          <ul>
-            <li>
-              <a href="">
-                <span class="icon">
-                  <img class="img-icon" src="./image/dashbaord.png" alt="dashboard icon">
-                </span>
-                <span class="icontext">Dashboard</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span class="icon">
-                  <img src="./image/companies.png" alt="dashboard icon">
-                </span>
-                <span class="icontext">Companies</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span class="icon">
-                  <img src="./image/order.png" alt="dashboard icon">
-                </span>
-                <span class="icontext">Order Pool</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span class="icon">
-                  <img src="./image/orderhistory.png" alt="dashboard icon">
-                </span>
-                <span class="icontext">Order History</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span class="icon">
-                  <img src="./image/subscription.png" alt="dashboard icon">
-                </span>
-                <span class="icontext">Subscription</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span class="icon">
-                  <img src="./image/earnings.png" alt="dashboard icon">
-                </span>
-                <span class="icontext">Earnings</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span class="icon">
-                  <img src="./image/reports.png" alt="dashboard icon">
-                </span>
-                <span class="icontext">Reports</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span class="icon">
-                  <img src="./image/settings.png" alt="dashboard icon">
-                </span>
-                <span class="icontext">Settings</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span class="icon">
-                  <img src="./image/support.png" alt="dashboard icon">
-                </span>
-                <span class="icontext">Supports</span>
-              </a>
-            </li>
-            <li>
-              <a href="./login.html">
-                <span class="icon">
-                  <img src="./image/support.png" alt="dashboard icon">
-                </span>
-                <span class="icontext">Logout</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="main-container">
-        <header>
-          <div class="search-wrapper">
-            <img src="./image/Search.png" alt="search icon" />
-            <input type="search" class="search-input" placeholder="Search" />
-          </div>
-          <div class="user-wrapper">
-            <img src="./image/Photo.png" alt="user avatar" />
-            <span class="indicator"></span>
-            <div class="user-info">
-              <span class="username">Jude Adam</span>
-              <span class="role">Admin</span>
+    <div>
+      <div class="container">
+        <div class="sidebar-container">
+          <div class="sidebar-wrapper">
+            <div class="image-wrapper">
+              <img src="./image/logo.png" alt="dms logo" />
+            </div>
+            <div class="sidebar-content">
+              <ul>
+                <li>
+                  <a href="">
+                    <span class="icon">
+                      <img
+                        class="img-icon"
+                        src="./image/dashbaord.png"
+                        alt="dashboard icon"
+                      />
+                    </span>
+                    <span class="icontext">Dashboard</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <span class="icon">
+                      <img src="./image/companies.png" alt="dashboard icon" />
+                    </span>
+                    <span class="icontext">Companies</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <span class="icon">
+                      <img src="./image/order.png" alt="dashboard icon" />
+                    </span>
+                    <span class="icontext">Order Pool</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <span class="icon">
+                      <img
+                        src="./image/orderhistory.png"
+                        alt="dashboard icon"
+                      />
+                    </span>
+                    <span class="icontext">Order History</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <span class="icon">
+                      <img
+                        src="./image/subscription.png"
+                        alt="dashboard icon"
+                      />
+                    </span>
+                    <span class="icontext">Subscription</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <span class="icon">
+                      <img src="./image/earnings.png" alt="dashboard icon" />
+                    </span>
+                    <span class="icontext">Earnings</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <span class="icon">
+                      <img src="./image/reports.png" alt="dashboard icon" />
+                    </span>
+                    <span class="icontext">Reports</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <span class="icon">
+                      <img src="./image/settings.png" alt="dashboard icon" />
+                    </span>
+                    <span class="icontext">Settings</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <span class="icon">
+                      <img src="./image/support.png" alt="dashboard icon" />
+                    </span>
+                    <span class="icontext">Supports</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./login.html">
+                    <span class="icon">
+                      <img src="./image/support.png" alt="dashboard icon" />
+                    </span>
+                    <span class="icontext">Logout</span>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-        </header>
-        <div class="dashboard-analysis">DASHBAORD</div>
+        </div>
+        <!-- Dashboard main content -->
+        <div class="main-container">
+          <header>
+            <div class="search-wrapper">
+              <img src="./image/search.png" alt="search icon" />
+              <input type="search" class="search-input" placeholder="Search" />
+            </div>
+            <div class="user-wrapper">
+              <img src="./image/photo.png" alt="user avatar" />
+              <span class="indicator"></span>
+              <div class="user-info">
+                <span class="username">Jude Adam</span>
+                <span class="role">Admin</span>
+              </div>
+            </div>
+          </header>
+          <div class="dashboard-analysis">
+            <h1>Dashboard</h1>
+            <div class="dms-dash">
+              <div class="dms-dash-1 grid-item-1">
+                <div class="card">
+                  <div class="pool-orders">
+                    <div class="top">
+                      <h3>Total Exchange Pool Orders</h3>
+                      <img src="./image/orders.png" alt="total orders" />
+                    </div>
+                    <div class="bottom">
+                      <div class="number">
+                        <h1>504</h1>
+                        <img src="./image/yellow.png" alt="" />
+                      </div>
+                      <div class="moment">
+                        <span>Today</span>
+                        <img src="./image/horizontal.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="pool-orders">
+                    <div class="top">
+                      <h3>Total Companies</h3>
+                      <img src="./image/t-companies.png" alt="total orders" />
+                    </div>
+                    <div class="bottom">
+                      <div class="number">
+                        <h1>504</h1>
+                        <img src="./image/yellow.png" alt="" />
+                      </div>
+                      <div class="moment">
+                        <span>Today</span>
+                        <img src="./image/horizontal.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="pool-orders">
+                    <div class="top">
+                      <h3>Total Cancelled Orders</h3>
+                      <img
+                        src="./image/t-cancelled-order.png"
+                        alt="total orders"
+                      />
+                    </div>
+                    <div class="bottom">
+                      <div class="number">
+                        <h1>504</h1>
+                        <img src="./image/yellow.png" alt="" />
+                      </div>
+                      <div class="moment">
+                        <span>Today</span>
+                        <img src="./image/horizontal.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="pool-orders">
+                    <div class="top">
+                      <h3>Total Created Orders</h3>
+                      <img src="./image/tcreated.png" alt="total orders" />
+                    </div>
+                    <div class="bottom">
+                      <div class="number">
+                        <h1>504</h1>
+                        <img src="./image/yellow.png" alt="" />
+                      </div>
+                      <div class="moment">
+                        <span>Today</span>
+                        <img src="./image/horizontal.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="right-container">
+                <div class="top-right">
+                  <div class="dms-dash-2 grid-item">
+                    <h1 class="total-order">120</h1>
+                    <h4 class="order-desc">
+                      Companies sent orders to delivery pool today.
+                    </h4>
+                    <img class="order-img" src="./image/photo@2x.png" alt="" />
+                    <h3 class="order-increment">+84%</h3>
+                    <img
+                      class="increment-graph"
+                      src="./image/blue-line.png"
+                      alt=""
+                    />
+                    <h4 class="report-desc">Comapred to yesterday</h4>
+                  </div>
+                  <div class="dms-dash-3 grid-item" id="container"></div>
+                </div>
+                <div class="bottom-right">
+                  <div class="dms-dash-4 grid-item">
+                    <div class="exchange-pool">
+                      <div class="pool-desc">
+                        <h5>Exchange pool today</h5>
+                        <span>Most Orders picked by:</span>
+                      </div>
+                      <div class="arrow-down">
+                        <img src="./image/Horizontal.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="delivery-bike">
+                      <img src="./image/bluebike.png" alt="delivery-bike" />
+                    </div>
+                    <div class="delivery-info">
+                      <h5>FZ Deliveries</h5>
+                      <div class="delivery-detail">
+                        <span class="delivery-address">Allen, Lagos</span>
+                        <span class="delivery-amount">N340,000</span>
+                      </div>
+                    </div>
+                    <div class="orders-info">
+                      <div class="order-count">
+                        <span class="order-figure">504</span>
+                        <span>Orders</span>
+                      </div>
+                      <div class="order-history">
+                        <img src="./image/red-line.png" alt="">
+                        <span>Comapared to Yesterday</span>
+                      </div>
+                    </div>
+                    <div class="order-processed">
+                      <span class="processed-count">267</span>
+                      <span class="pool">Pushed to pool</span>
+                    </div>
+                  </div>
+                  <div class="dms-dash-5 grid-item" id="wrapper">
+                    <h1>Delivered Orders </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Dashboard main content -->
       </div>
     </div>
+    <script src="./chart.js"></script>
   </body>
 </html>
