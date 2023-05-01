@@ -8,13 +8,13 @@
   /* align-items: center; */
 }
 .sidebar-container {
-  flex: 25%;
+  flex: 20%;
   background: #ffffff;
 }
 .sidebar-wrapper {
   margin-top: 0.9rem;
   height: 100vh;
-  position: fixed;
+  position: sticky;
   top: 0;
 }
 .image-wrapper img {
@@ -47,7 +47,7 @@
 }
 
 .main-container {
-  flex: 75%;
+  flex: 80%;
   background: #e5e5e5;
 }
 header {
@@ -100,7 +100,7 @@ header {
 }
 
 .dashboard-analysis {
-  padding: 2rem;
+  padding: 2rem; 
 }
 
 .dms-dash {
