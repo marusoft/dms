@@ -270,7 +270,7 @@ header {
 }
 
 
-@media (min-width: 576px) {
+
   .dms-dash {
     display: flex;
   }
@@ -304,6 +304,19 @@ header {
   }
   .right-container .grid-item {
     margin-left: 10px;
+  }
+@media (max-width: 920px) {
+  .dms-dash{
+    flex-direction: column;
+
+  }
+  .top-right{
+    flex-direction: column;
+
+  }
+  .bottom-right{
+    flex-direction: column;
+
   }
 }
 
