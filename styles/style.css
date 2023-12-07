@@ -31,22 +31,27 @@ header {
   padding: 40px;
 }
 .desc-container {
-  text-align: center;
-  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
 }
-
-.title-desc h3 {
+.title-desc {
+  max-width: 500px;
+  text-align: center;
+}
+.title-desc h2 {
   font-weight: 100;
-  font-size: 45px;
+  font-size: 35px;
   color: #000000;
-  margin-bottom: 1rem;
+  margin-bottom: .7rem;
 }
 .title-desc p {
   font-weight: 400;
-  font-size: 1.29rem;
   color: #000000;
   opacity: 0.4;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   line-height: 1.5;
 }
 .get-btn {
@@ -57,7 +62,9 @@ header {
   cursor: pointer;
   border: none;
 }
-
+.get-btn a{
+  color: #ffffff;
+}
 .register-right {
   flex: 50%;
   padding: 40px;
@@ -128,6 +135,9 @@ a {
 .account-text {
   margin-left: 2rem;
 }
+/* .account-text a{
+  color: blue;
+} */
 .email-wrapper{
   position: relative;
 }
@@ -168,9 +178,7 @@ a {
     flex-direction: column;
   }
 }
-/* @media (max-width: 540px) {
 
-} */
 @media (max-width: 400px) {
   .account {
     flex-direction: column;
